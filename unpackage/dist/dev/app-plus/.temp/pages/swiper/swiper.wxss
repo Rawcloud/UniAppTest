@@ -1,0 +1,23 @@
+@import "../../common/vendor.wxss";
+
+.img {
+  width: 100%;
+  height: 400rpx;
+}
+.btncls {
+  margin-top: 50rpx;
+  margin-bottom: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.showIndecations {
+  background-color: #0FAEFF;
+}
+.showAutoPlay {
+  background-color: #0FAEFF;
+}

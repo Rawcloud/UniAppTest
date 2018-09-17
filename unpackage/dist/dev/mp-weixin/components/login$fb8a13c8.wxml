@@ -1,0 +1,36 @@
+<import src="page-head$0316d48a" />
+<template name="login$fb8a13c8">
+  <view class="_view data-v-87803992">
+    <view class="_view data-v-87803992 status_bar">
+      <view class="_view data-v-87803992 top_view"></view>
+    </view>
+    <view style="display: none;" class="_view data-v-87803992">
+      <template data="{{...$root[$kk+'0'], $root}}" is="page-head$0316d48a"></template>
+    </view>
+    <view class="_view data-v-87803992 page-body">
+      <view class="_view data-v-87803992 head-img">
+        <image class="_image data-v-87803992 img" src="../../static/imgs/snowflake.png"></image>
+      </view>
+      <view class="_view data-v-87803992 uni-list" style="margin: 80rpx 20rpx;width: 700rpx;">
+        <view class="_view data-v-87803992 uni-list-cell">
+          <image src="../../static/imgs/login/icon_user.png" class="_image data-v-87803992"></image>
+          <input class="_input data-v-87803992 uni-input" type="text" bindinput="handleProxy" placeholder="请输入用户名" value="{{username}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+        </view>
+        <view class="_view data-v-87803992 uni-list-cell">
+          <image src="../../static/imgs/login/icon_password.png" class="_image data-v-87803992"></image>
+          <input class="_input data-v-87803992 uni-input" bindinput="handleProxy" placeholder="请输入密码" password="{{showPassword}}" value="{{upaswrd}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" />
+          <view class="_view data-v-87803992 uni-icon uni-icon-eye {{[!showPassword ? 'uni-active' : '']}}" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}"></view>
+        </view>
+      </view>
+      <view class="_view data-v-87803992">
+        <label style="float: right;margin-right: 20rpx;font-size: 30rpx;" class="_label data-v-87803992">
+          <checkbox value="{{1}}" checked="{{checked}}" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_checkbox data-v-87803992"></checkbox>
+          <text class="_text data-v-87803992">记住密码</text>
+        </label>
+      </view>
+      <view class="_view data-v-87803992 button-sp-area" style="margin-top: 100rpx;">
+        <button class="_button data-v-87803992 button" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">登录</button>
+      </view>
+    </view>
+  </view>
+</template>

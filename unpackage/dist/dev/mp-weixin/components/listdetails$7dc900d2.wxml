@@ -1,0 +1,23 @@
+<import src="page-head$0316d48a" />
+<template name="listdetails$7dc900d2">
+  <view class="_view data-v-4581eb2d">
+    <view class="_view data-v-4581eb2d status_bar">
+      <view class="_view data-v-4581eb2d top_view"></view>
+    </view>
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$0316d48a"></template>
+    <view class="_view data-v-4581eb2d page">
+      <view class="_view data-v-4581eb2d banner">
+        <image class="_image data-v-4581eb2d banner-img" src="{{imgurl}}"></image>
+        <view class="_view data-v-4581eb2d banner-title">{{banner.bmzcbt}}</view>
+      </view>
+      <view class="_view data-v-4581eb2d article-meta">
+        <text class="_text data-v-4581eb2d article-author">{{banner.bmzcly}}</text>
+        <text class="_text data-v-4581eb2d article-text">发表于</text>
+        <text class="_text data-v-4581eb2d article-time">{{banner.bmzcsj}}</text>
+      </view>
+      <view class="_view data-v-4581eb2d article-content">
+        <rich-text nodes="{{htmlString}}" class="_rich-text data-v-4581eb2d"></rich-text>
+      </view>
+    </view>
+  </view>
+</template>

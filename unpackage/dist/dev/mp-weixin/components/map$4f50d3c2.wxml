@@ -1,0 +1,18 @@
+<import src="page-head$0316d48a" />
+<template name="map$4f50d3c2">
+  <view class="_view data-v-192bb71d">
+    <view class="_view data-v-192bb71d status_bar">
+      <view class="_view data-v-192bb71d top_view"></view>
+    </view>
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$0316d48a"></template>
+    <view class="_view data-v-192bb71d page-body">
+      <view class="_view data-v-192bb71d page-section page-section-gap">
+        <map id="mmap" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{covers}}" scale="13" show-location="{{showLocation}}" class="_map data-v-192bb71d"></map>
+      </view>
+      <view class="_view data-v-192bb71d">
+        <button type="primary" size="{{mini}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-192bb71d">移动</button>
+        <button type="warn" size="{{mini}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-192bb71d">平移</button>
+      </view>
+    </view>
+  </view>
+</template>

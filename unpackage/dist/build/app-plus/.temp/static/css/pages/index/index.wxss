@@ -1,0 +1,2 @@
+@import "/static/css/vendor.wxss";
+.content{flex:1;justify-content:center;align-items:center}.title{font-size:36rpx;color:#8f8f94}.img{width:750rpx;height:1250rpx}

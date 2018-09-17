@@ -1,0 +1,28 @@
+<import src="/components/page-head.vue.wxml" />
+<template name="532b327c">
+  <view class="_view data-v-5e21c23a">
+    <template data="{{...$root[$kk+'0'], $root}}" is="0316d48a"></template>
+    <view class="_view data-v-5e21c23a page-body">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="_swiper data-v-5e21c23a">
+        <swiper-item wx:key="item" key="{{item}}" wx:for="{{itemList}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-5e21c23a">
+          <image class="_image data-v-5e21c23a img" src="{{item}}"></image>
+        </swiper-item>
+      </swiper>
+      <view class="_view data-v-5e21c23a btncls">
+        <button bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-5e21c23a {{[indicatorDots ? 'showIndecations' : '']}}"> 指示点 </button>
+        <button bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-5e21c23a {{[autoplay ? 'showAutoPlay' : '']}}"> 自动播放 </button>
+      </view>
+      <slider bindchange="handleProxy" show-value min="500" max="2000" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_slider data-v-5e21c23a" /> 时间间隔
+      <slider bindchange="handleProxy" show-value min="1000" max="10000" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_slider data-v-5e21c23a" /> 持续时间
+      <view style="text-align: center;margin-top: 20PX;" class="_view data-v-5e21c23a">
+        <view class="_view data-v-5e21c23a">二维码(长按可识别)</view>
+        <input class="_input data-v-5e21c23a uni-input" bindinput="handleProxy" value="{{qrvalue}}" placeholder="{{initQrstr}}" data-eventid="{{'4'}}" data-comkey="{{$k}}" />
+        <image src="{{src}}" bindlongpress="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_image data-v-5e21c23a"></image>
+      </view>
+      <view class="_view data-v-5e21c23a btn-area">
+        <button bindtap="handleProxy" class="_button data-v-5e21c23a page-body-button" form-type="submit" data-eventid="{{'6'}}" data-comkey="{{$k}}">生成二维码</button>
+        <button bindtap="handleProxy" class="_button data-v-5e21c23a page-body-button" data-eventid="{{'7'}}" data-comkey="{{$k}}">清除二维码</button>
+      </view>
+    </view>
+  </view>
+</template>

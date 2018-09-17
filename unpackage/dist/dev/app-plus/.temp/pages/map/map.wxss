@@ -1,0 +1,18 @@
+@import "../../common/vendor.wxss";
+
+._map {
+  width: 100%;
+  height: 600rpx;
+}
+._button {
+  line-height: 100rpx;
+  margin: 20rpx 10rpx;
+}
+.container {
+  width: 100%;
+  height: 300rpx;
+}
+.ec-canvas.data-v-4c40732f {
+  width: 100%;
+  height: 100%;
+}

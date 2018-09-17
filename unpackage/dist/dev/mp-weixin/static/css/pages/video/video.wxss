@@ -1,0 +1,5 @@
+@import "/static/css/vendor.wxss";
+
+.myvideo {
+  width: 100%;
+}

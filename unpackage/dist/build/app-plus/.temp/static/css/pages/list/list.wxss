@@ -1,0 +1,2 @@
+@import "/static/css/vendor.wxss";
+.page{background:#efeff4}.title{padding:20rpx}
