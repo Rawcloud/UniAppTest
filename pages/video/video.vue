@@ -67,10 +67,10 @@
 						self.src = res.tempFilePath;
 						console.log('视频选择完成,路径为'+res.tempFilePath)
 						console.log('当前视频播放源路径为'+self.src)
-						uni.showModal({
-							title:'提示',
-							content:'当前视频播放有bug,官方正在修复!',
-						})
+// 						uni.showModal({
+// 							title:'提示',
+// 							content:'当前视频播放有bug,官方正在修复!',
+// 						})
 					}
 				})
 			},
