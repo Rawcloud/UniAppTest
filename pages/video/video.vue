@@ -71,6 +71,7 @@
 // 							title:'提示',
 // 							content:'当前视频播放有bug,官方正在修复!',
 // 						})
+						this.autoplay = true;
 					}
 				})
 			},
