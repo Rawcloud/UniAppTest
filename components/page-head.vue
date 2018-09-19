@@ -34,7 +34,7 @@
 					delta:1
 				})
 			},
-			toScan:function(){
+			toScan:function(res){
 				if(this.rightIcon === "iconfont icon-saoma"){
 					uni.scanCode({
 										success: function (res) {
@@ -51,6 +51,9 @@
 						url:"../feedback/feedback"
 					})
 				}
+			},
+			test:function(res){
+				console.log(res)
 			}
 		}
 	}

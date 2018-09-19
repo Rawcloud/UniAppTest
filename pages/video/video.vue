@@ -61,6 +61,8 @@
 			},
 			bindButtonTap:function () {
 				var self = this;
+				self.$children[0].test('cs');//调用组件中的方法
+				// console.log(self.$children[0]);
 				uni.chooseVideo({
 					sourceType:['album','camera'],
 					success:(res) =>{
