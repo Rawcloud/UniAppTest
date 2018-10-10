@@ -31,7 +31,7 @@
 			return{
 				title:'视频',
 				autoplay:false,
-				src:'https://135zyv4.xw0371.com/2018/07/15/tkOecYbB787RyZuW/playlist.m3u8',//本地视频'../../static/video/video_pt.mp4'
+				src:'',//本地视频'../../static/video/video_pt.mp4'
 				videoContext:'',
 				inputValue: '',
 				danmuList: [{
@@ -51,6 +51,7 @@
 		},
 		onReady:function(res){
 			this.videoContext = uni.createVideoContext('myvideo');
+			this.src = '../../static/video/video_pt.mp4';
 		},
 		components:{
 			pageHead
@@ -79,7 +80,7 @@
 			},
 			bindInputBlur:function (e) {
 				this.inputValue = e.target.value
-				// console.log(this.inputValue)
+				console.log(this.$store)
 			},
 			bindSendDanmu:function () {
 				var self = this;
